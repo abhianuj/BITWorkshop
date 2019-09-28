@@ -1,2 +1,2 @@
 # .github.io
-Bit Workshop
+Bit Study sessions website
