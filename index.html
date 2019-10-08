@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Kickstart Workshop</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content= "width=device-width, initial-scale=1.0">
         <meta name="description" content="Workshop to kickstart your developer skills.">
         <style>
@@ -80,9 +81,9 @@
 
             /* main content */
             #upSessions{
-                background-color: #1BA94C /*rgb(87, 201, 127)*/;
+                background-color: #1BA94C;
                 padding: 11px;
-                color: #f1f1f1;
+                color: #f6F6F6;
                 margin-top: 34px;
                 clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
                 width: 71vw;
@@ -145,22 +146,22 @@
                 padding-bottom: 10px;
             }
 
-            /*paragraph1*/
-            #para1{
+            /*content1*/
+            #content1{
                 font-size: 1.4rem;
                 margin: 70px 40px 34px 40px;
                 position: relative;
                 color: #222222;
                 text-align: center;
             }
-            #para1::after{
+            #content1::after{
                 content: '';
                 position: absolute;
                 border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-                height: 100%;
-                width: 100%;
-                left: 0;
-                bottom: 0;
+                height: 120%;
+                width: 112%;
+                left: -7%;
+                bottom: -10%;
                 background-color: #F1F1F1;
                 z-index: -1;
                 animation-name: awesome;
@@ -184,6 +185,68 @@
                 100%{
                     border-radius: 25% 75% 70% 30% / 56% 62% 38% 44% ;
                 }
+            }
+
+            /*content2*/
+            #content2{
+                background-color: #242B36;
+                color: #EFEFEF;
+                font-size: 1.2rem;
+                padding: 38px 28px 28px 28px;
+                margin: 80px 0px 28px 0px;
+                position: relative;
+            }
+            #content2 #c2head{
+                font-size: 1.4rem;
+                color: #F6F6F6;
+                position: absolute;
+                left: 0;
+                top: -20px;
+                background-color: #1BA94C;
+                height: auto;
+                width: auto;
+                padding: 7px 34px 7px 14px;
+                clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+                font-weight: bold;
+                letter-spacing: 0.07rem;
+            }
+
+            /*content3*/
+            #content3{
+                text-align: center;
+                font-size: 1.2rem;
+                padding: 10px 28px 28px 28px;
+                height: auto;
+                width: 100vw;
+            }
+
+            /*footer*/
+            footer{
+                color: #efefef;
+                line-height: 1.6rem;
+            }
+            footer a{
+                text-decoration: none;
+                color: inherit;
+            }
+            footer h3{
+                padding-bottom: 4px;
+            }
+            #f1{
+                background-color: #F1F1F1;
+                padding: 34px;
+                color: rgb(36,43,55);
+            }
+            .connect{
+                display: block;
+            }
+            #f2{
+                background-color: rgba(36,43,55,0.9);
+                padding: 34px;
+            }
+            #f3{
+                background-color: rgb(36,43,55);
+                padding: 25px 34px;
             }
         </style>
     </head>
@@ -251,13 +314,47 @@
                     Description of the session like time date venue and more about the topic of discussion
                 </div>
             </article>
-            
-            <div id="para1">
+
+            <div id="content1">
                 First time in bit Teacher's teaching out of syllabus.
-                Yes you heard it right, from setting apache tomcat server to introduction to Artificial intelligence our awesome teacheers will rock it all.
+                Yes you heard it right, from setting apache tomcat server to introduction to Artificial intelligence our awesome teachers will rock it all.
+            </div>
+
+            <div id="content2">
+                <div id="c2head">Topic here</div>
+                It's a descriptive paragraph about content 2 replace this with original content or just remove it if it is of no use. But try to use it as much as possible it enhances the UI so removing it can cause a bad user experience.
+            </div>
+
+            <div id="content3">
+                <img src="images/github.png" loading="lazy"><br>
+                Follow us on Github and get all the stuff (mainly code) related to the workshop.
+                <a href="https://github.com">Take me there</a>
             </div>
 
         </section>
+
+        <!--fotter-->
+        <footer>
+            <div id="f1">
+                <h3>Connect</h3>
+                <a class="connect" href="htpps://instagram.com">Instagram</a>
+                <a class="connect" href="https://blogger.com">Blog</a>
+                <a class="connect" href="https://github.com">Github</a>
+            </div>
+            <div id="f2">
+                <h3>Current Programs</h3>
+                Android<br>
+                HTML<br>
+                CSS<br>
+                javacript<br>
+                Advanced javaScript<br>
+                Competitive prgramming
+            </div>
+            <div id="f3">
+                <a href="codeofconduct.html">Code of Conduct</a> | <a href="https://privacy.html">Privacy</a>
+            </div>
+            
+        </footer>
     </body>
     <script async src="script.js"></script>
 </html>
