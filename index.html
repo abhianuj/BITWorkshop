@@ -23,8 +23,8 @@
                 height: 17vw;
                 border-bottom: 1px solid rgb(209, 209, 209);
                 margin-bottom: 20px;
-                background-color: #242B36;
-                color: rgb(210, 210, 210);
+                background-color: /*#242B36*/#39424E;
+                color: rgb(220, 220, 220);
                 overflow: hidden;
                 transition: all 0.2s;
             }
@@ -132,8 +132,8 @@
                 left: 0;
                 bottom: 0;
                 z-index: 1;
-                background-color: rgba(55,55,55,0.9);
-                color: #f4f4f4;
+                background-color: rgba(50,50,50,0.9);
+                color: #efefef;
                 border-radius: 4px;
                 transition: all 0.2s;
                 overflow: hidden;
@@ -143,7 +143,7 @@
             }
             .decription h2{
                 font-size: 1.4rem;
-                padding-bottom: 10px;
+                padding: 14px 0px;
             }
 
             /*content1*/
@@ -158,7 +158,7 @@
                 content: '';
                 position: absolute;
                 border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-                height: 120%;
+                height: 124%;
                 width: 112%;
                 left: -7%;
                 bottom: -10%;
@@ -189,8 +189,8 @@
 
             /*content2*/
             #content2{
-                background-color: #242B36;
-                color: #EFEFEF;
+                background-color: /*#242B36*/#39424E;
+                color: #EEEEEE;
                 font-size: 1.2rem;
                 padding: 38px 28px 28px 28px;
                 margin: 80px 0px 28px 0px;
@@ -215,10 +215,13 @@
             /*content3*/
             #content3{
                 text-align: center;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 padding: 10px 28px 28px 28px;
                 height: auto;
                 width: 100vw;
+            }
+            #content3 img{
+                width: 17vw;
             }
 
             /*footer*/
@@ -235,20 +238,20 @@
                 padding-bottom: 4px;
             }
             #f1{
-                background-color: #F1F1F1;
-                padding: 28px;
+                background-color: #F0F4F4;
+                padding: 25px;
                 color: rgb(36,43,55);
             }
             .connect{
                 display: block;
             }
             #f2{
-                background-color: rgba(36,43,55,0.9);
-                padding: 28px;
+                background-color: #39424E;
+                padding: 25px;
             }
             #f3{
                 background-color: rgb(36,43,55);
-                padding: 25px 28px;
+                padding: 25px;
             }
         </style>
     </head>
@@ -328,9 +331,9 @@
             </div>
 
             <div id="content3">
-                <img src="images/github.png" loading="lazy"><br>
-                Follow us on Github and get all the stuff (mainly code) related to the workshop.<br>
-                <a href="https://github.com">Take me there</a>
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyOTEuMzIgMjkxLjMyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOTEuMzIgMjkxLjMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8cGF0aCBzdHlsZT0iZmlsbDojMkI0MTREOyIgZD0iTTE0NS42NiwwQzY1LjIxOSwwLDAsNjUuMjE5LDAsMTQ1LjY2YzAsODAuNDUsNjUuMjE5LDE0NS42NiwxNDUuNjYsMTQ1LjY2ICAgczE0NS42Ni02NS4yMSwxNDUuNjYtMTQ1LjY2QzI5MS4zMTksNjUuMjE5LDIyNi4xLDAsMTQ1LjY2LDB6IE0xODYuNDYyLDI1Ni42MjVjLTAuODM4LTExLjM5OC0xLjc3NS0yNS41MTgtMS44My0zMS4yMzUgICBjLTAuMzY0LTQuMzg4LTAuODM4LTE1LjU0OS0xMS40MzQtMjIuNjc3YzQyLjA2OC0zLjUyMyw2Mi4wODctMjYuNzc0LDYzLjUyNi01Ny40OTljMS4yMDItMTcuNDk3LTUuNzU0LTMyLjg4My0xOC4xMDctNDUuMyAgIGMwLjYyOC0xMy4yODItMC40MDEtMjkuMDIzLTEuMjU2LTM1Ljk0MWMtOS40ODYtMi43MzEtMzEuNjA4LDguOTQ5LTM3Ljc5LDEzLjk0N2MtMTMuMDM3LTUuMDYyLTQ0Ljk0NS02LjgzNy02NC4zMzYsMCAgIGMtMTMuNzQ3LTkuNjY4LTI5LjM5Ni0xNS42NC0zNy45MjYtMTMuOTc0Yy03Ljg3NSwxNy40NTItMi44MTMsMzMuOTQ4LTEuMjc1LDM1LjkxNGMtMTAuMTQyLDkuMjY4LTI0LjI4OSwyMC42NzUtMjAuNDQ3LDQ0LjU3MiAgIGM2LjE2MywzNS4wNCwzMC44MTYsNTMuOTQsNzAuNTA4LDU4LjU2NGMtOC40NjYsMS43My05Ljg5Niw4LjA0OC0xMC42MDYsMTAuNzg4Yy0yNi42NTYsMTAuOTk3LTM0LjI3NS02Ljc5MS0zNy42NDQtMTEuNDI1ICAgYy0xMS4xODgtMTMuODQ3LTIxLjIzLTkuODMyLTIxLjg0OS05LjYxNGMtMC42MDEsMC4yMTgtMS4wNTYsMS4wOTItMC45OTIsMS41MTFjMC41NjQsMi45ODYsNi42NTUsNi4wMTgsNi45NTUsNi4yNjMgICBjOC4yNTcsNi4xNTQsMTEuMzE2LDE3LjI3LDEzLjIsMjAuNDM4YzExLjg0NCwxOS40NzMsMzkuMzc0LDExLjM5OCwzOS42MzgsMTEuNTYyYzAuMDE4LDEuNzAyLTAuMTkxLDE2LjAzMi0wLjM1NSwyNy4xODQgICBDNjQuMjQ1LDI0NS45OTIsMjcuMzExLDIwMC4yLDI3LjMxMSwxNDUuNjZjMC02NS4zNjUsNTIuOTg0LTExOC4zNDgsMTE4LjM0OC0xMTguMzQ4UzI2NC4wMDgsODAuMjk1LDI2NC4wMDgsMTQ1LjY2ICAgQzI2NC4wMDgsMTk2LjY2OCwyMzEuNjksMjM5Ljk5MiwxODYuNDYyLDI1Ni42MjV6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /><br>
+                Follow us on Github and get all the stuff (mainly code) related to the workshop.
+                <br><a href="https://github.com">Take me there</a>
             </div>
 
         </section>
